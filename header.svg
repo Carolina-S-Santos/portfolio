@@ -23,7 +23,7 @@
   </defs>
 
   <rect width="1280" height="320" rx="28" fill="#050B14"/>
-  <rect x="16" y="16" width="1248" height="288" rx="24" fill="url(#bg)" stroke="rgba(121,153,191,0.22)"/>
+  <rect x="16" y="16" width="1248" height="288" rx="24" fill="url(#bg)" stroke="#7999BF" stroke-opacity="0.22"/>
 
   <g opacity="0.9">
     <circle cx="1096" cy="64" r="82" fill="#49A3FF" opacity="0.22" filter="url(#blur)">
@@ -35,7 +35,7 @@
     </circle>
   </g>
 
-  <path d="M0 262C168 230 332 210 492 230C664 252 778 290 950 284C1088 279 1188 248 1280 218V320H0V262Z" fill="rgba(255,255,255,0.035)"/>
+  <path d="M0 262C168 230 332 210 492 230C664 252 778 290 950 284C1088 279 1188 248 1280 218V320H0V262Z" fill="#FFFFFF" fill-opacity="0.035"/>
   <path d="M868 64H1146" stroke="url(#lineGlow)" stroke-width="2.4" stroke-linecap="round" opacity="0.78">
     <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.8s" repeatCount="indefinite"/>
   </path>
