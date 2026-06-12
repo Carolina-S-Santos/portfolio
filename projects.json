@@ -109,7 +109,7 @@
     ],
     "assets": {
       "icon": "assets/projects/live-matter/icon.png",
-      "cover": "assets/projects/live-matter/cover.png",
+      "cover": "assets/projects/live-matter/icon.png",
       "images": [
         "assets/projects/live-matter/1.png",
         "assets/projects/live-matter/2.png",

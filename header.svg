@@ -1,50 +1,14 @@
-<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="headerTitle headerDesc">
+<svg width="1280" height="260" viewBox="0 0 1280 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="headerTitle headerDesc">
   <title id="headerTitle">Carolina Santos Header</title>
-  <desc id="headerDesc">Dark portfolio header for Carolina Santos with subtle animated accents.</desc>
-  <defs>
-    <linearGradient id="bg" x1="96" y1="32" x2="1184" y2="288" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0A1729"/>
-      <stop offset="1" stop-color="#07111F"/>
-    </linearGradient>
-    <linearGradient id="lineGlow" x1="237" y1="76" x2="976" y2="236" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#5BB4FF"/>
-      <stop offset="1" stop-color="#1E63C7"/>
-    </linearGradient>
-    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="32"/>
-    </filter>
-    <style>
-      .title { fill: #ECF3FF; font: 700 52px 'Segoe UI', Arial, sans-serif; letter-spacing: -0.03em; }
-      .subtitle { fill: #9BB0CA; font: 600 20px 'Segoe UI', Arial, sans-serif; letter-spacing: 0.01em; }
-      .copy { fill: #7386A1; font: 400 20px 'Segoe UI', Arial, sans-serif; }
-      .eyebrow { fill: #49A3FF; font: 700 13px 'Segoe UI', Arial, sans-serif; letter-spacing: 0.28em; text-transform: uppercase; }
-      .meta { fill: #81F0B8; font: 600 14px 'Segoe UI', Arial, sans-serif; letter-spacing: 0.12em; }
-    </style>
-  </defs>
-
-  <rect width="1280" height="320" rx="28" fill="#050B14"/>
-  <rect x="16" y="16" width="1248" height="288" rx="24" fill="url(#bg)" stroke="#7999BF" stroke-opacity="0.22"/>
-
-  <g opacity="0.9">
-    <circle cx="1096" cy="64" r="82" fill="#49A3FF" opacity="0.22" filter="url(#blur)">
-      <animate attributeName="cx" values="1096;1116;1096" dur="10s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="64;76;64" dur="10s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="184" cy="262" r="66" fill="#235DB7" opacity="0.16" filter="url(#blur)">
-      <animate attributeName="cx" values="184;168;184" dur="11s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <path d="M0 262C168 230 332 210 492 230C664 252 778 290 950 284C1088 279 1188 248 1280 218V320H0V262Z" fill="#FFFFFF" fill-opacity="0.035"/>
-  <path d="M868 64H1146" stroke="url(#lineGlow)" stroke-width="2.4" stroke-linecap="round" opacity="0.78">
-    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4.8s" repeatCount="indefinite"/>
-  </path>
-  <path d="M928 112H1182" stroke="url(#lineGlow)" stroke-width="1.6" stroke-linecap="round" opacity="0.48"/>
-  <path d="M834 160H1128" stroke="url(#lineGlow)" stroke-width="1.6" stroke-linecap="round" opacity="0.34"/>
-
-  <text x="84" y="78" class="eyebrow">PORTFOLIO / README</text>
-  <text x="84" y="132" class="title">Carolina Santos</text>
-  <text x="84" y="170" class="subtitle">CS Student @ UNISINOS | Apple Developer Academy Fellow</text>
-  <text x="84" y="214" class="copy">Building digital products that connect code, design, and real-world use.</text>
-  <text x="84" y="256" class="meta">IOS • PRODUCT • DESIGN • TECHNOLOGY</text>
+  <desc id="headerDesc">Minimal dark profile header for Carolina Santos.</desc>
+  <rect width="1280" height="260" rx="24" fill="#0B0B0C"/>
+  <rect x="24" y="24" width="1232" height="212" rx="18" fill="#111214" stroke="#24262B"/>
+  <text x="72" y="82" fill="#7CB7FF" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">PORTFOLIO</text>
+  <text x="72" y="132" fill="#F3F4F6" font-size="48" font-weight="700" font-family="Avenir Next, Segoe UI, Arial, sans-serif">Carolina Santos</text>
+  <text x="72" y="170" fill="#A1A1AA" font-size="20" font-family="Segoe UI, Arial, sans-serif">CS Student @ UNISINOS | Apple Developer Academy Fellow</text>
+  <text x="72" y="204" fill="#71717A" font-size="18" font-family="Segoe UI, Arial, sans-serif">Building digital products with code, product thinking and visual clarity.</text>
+  <line x1="1008" y1="66" x2="1184" y2="66" stroke="#24262B"/>
+  <line x1="1060" y1="102" x2="1184" y2="102" stroke="#24262B"/>
+  <line x1="1108" y1="138" x2="1184" y2="138" stroke="#7CB7FF"/>
+  <line x1="1032" y1="174" x2="1184" y2="174" stroke="#24262B"/>
 </svg>

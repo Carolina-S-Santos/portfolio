@@ -14,6 +14,40 @@ function escapeXml(value) {
     .replace(/'/g, "&apos;");
 }
 
+function wrapText(text, maxChars, maxLines) {
+  const words = String(text || "").split(/\s+/).filter(Boolean);
+  const lines = [];
+  let current = "";
+
+  for (const word of words) {
+    const next = current ? `${current} ${word}` : word;
+    if (next.length <= maxChars) {
+      current = next;
+      continue;
+    }
+
+    if (current) {
+      lines.push(current);
+    }
+    current = word;
+
+    if (lines.length === maxLines - 1) {
+      break;
+    }
+  }
+
+  if (current && lines.length < maxLines) {
+    lines.push(current);
+  }
+
+  const usedWords = lines.join(" ").split(/\s+/).filter(Boolean).length;
+  if (usedWords < words.length && lines.length) {
+    lines[lines.length - 1] = `${lines[lines.length - 1].replace(/[. ]+$/, "")}...`;
+  }
+
+  return lines;
+}
+
 function normalizeProjects(projects) {
   return projects.map((project) => ({
     name: project.name || "Untitled",
@@ -26,121 +60,61 @@ function normalizeProjects(projects) {
   }));
 }
 
-function wrapText(text, maxChars, maxLines) {
-  const words = String(text || "").split(/\s+/).filter(Boolean);
-  const lines = [];
-  let currentLine = "";
-
-  for (const word of words) {
-    const candidate = currentLine ? `${currentLine} ${word}` : word;
-    if (candidate.length <= maxChars) {
-      currentLine = candidate;
-      continue;
-    }
-
-    if (currentLine) {
-      lines.push(currentLine);
-    }
-    currentLine = word;
-
-    if (lines.length === maxLines - 1) {
-      break;
-    }
-  }
-
-  if (currentLine && lines.length < maxLines) {
-    lines.push(currentLine);
-  }
-
-  const consumedWords = lines.join(" ").split(/\s+/).filter(Boolean).length;
-  if (consumedWords < words.length && lines.length) {
-    const lastIndex = lines.length - 1;
-    lines[lastIndex] = `${lines[lastIndex].replace(/[. ]+$/, "")}...`;
-  }
-
-  return lines;
-}
-
-function gradientFor(index) {
-  const palettes = [
-    ["#49a3ff", "#1756b7"],
-    ["#7de2d1", "#1c7f8b"],
-    ["#86a8ff", "#354fb7"],
-    ["#90d7ff", "#21689d"],
-  ];
-  return palettes[index % palettes.length];
-}
-
-function renderCard(project, index) {
-  const x = index % 2 === 0 ? 56 : 508;
-  const y = index < 2 ? 92 : 356;
-  const [accentStart] = gradientFor(index);
-  const headlineLines = wrapText(project.headline, 34, 3);
-  const techLine = wrapText(project.techStack.slice(0, 4).join(" • "), 34, 2);
-  const category = escapeXml(project.categoryLabel);
-  const name = escapeXml(project.name);
+function renderProjectCard(project) {
+  const title = escapeXml(project.name);
+  const category = escapeXml(project.categoryLabel.toUpperCase());
+  const headlineLines = wrapText(project.headline, 48, 3);
+  const techLines = wrapText(project.techStack.slice(0, 4).join(" • "), 54, 2);
   const url = escapeXml(`https://carolina-s-santos.github.io/portfolio/project/?slug=${project.slug}`);
 
   return `
-    <a href="${url}">
-      <g transform="translate(${x}, ${y})">
-        <rect width="396" height="220" rx="24" fill="rgba(16,30,51,0.96)" stroke="rgba(121,153,191,0.24)" />
-        <rect x="0" y="0" width="396" height="220" rx="24" fill="url(#cardGlow${index})" opacity="0.16" />
-        <text x="28" y="34" fill="${accentStart}" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.8">${category.toUpperCase()}</text>
-        <text x="28" y="72" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">${name}</text>
-        ${headlineLines.map((line, lineIndex) => `
-          <text x="28" y="${106 + lineIndex * 24}" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">${escapeXml(line)}</text>
-        `).join("")}
-        ${techLine.map((line, lineIndex) => `
-          <text x="28" y="${168 + lineIndex * 20}" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">${escapeXml(line)}</text>
-        `).join("")}
-        <text x="28" y="196" fill="#81f0b8" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.5">${escapeXml(project.date)}</text>
-      </g>
-    </a>
-  `;
+  <a href="${url}">
+    <g transform="translate(48, 120)">
+      <rect width="864" height="280" rx="20" fill="#111214" stroke="#24262B" />
+      <text x="32" y="40" fill="#7CB7FF" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">${category}</text>
+      <text x="32" y="92" fill="#F3F4F6" font-size="38" font-weight="700" font-family="Avenir Next, Segoe UI, Arial, sans-serif">${title}</text>
+      ${headlineLines.map((line, index) => `
+      <text x="32" y="${136 + index * 28}" fill="#A1A1AA" font-size="21" font-family="Segoe UI, Arial, sans-serif">${escapeXml(line)}</text>`).join("")}
+      ${techLines.map((line, index) => `
+      <text x="32" y="${220 + index * 22}" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">${escapeXml(line)}</text>`).join("")}
+      <text x="32" y="248" fill="#F3F4F6" font-size="14" font-family="Segoe UI, Arial, sans-serif">${escapeXml(project.date)}</text>
+      <line x1="680" y1="54" x2="816" y2="54" stroke="#24262B" />
+      <line x1="720" y1="92" x2="816" y2="92" stroke="#24262B" />
+      <line x1="756" y1="130" x2="816" y2="130" stroke="#7CB7FF" />
+      <line x1="696" y1="168" x2="816" y2="168" stroke="#24262B" />
+    </g>
+  </a>`;
 }
 
 function buildSvg(projects) {
-  const selected = projects
-    .filter((project) => project.featured)
-    .slice(0, 4);
-  const fallback = selected.length ? selected : projects.slice(0, 4);
+  const selected = projects.filter((project) => project.featured).slice(0, 1);
+  const project = (selected.length ? selected : projects.slice(0, 1))[0];
 
-  const defs = fallback
-    .map((project, index) => {
-      const [accentStart, accentEnd] = gradientFor(index);
-      return `
-    <linearGradient id="cardGlow${index}" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="${accentStart}" />
-      <stop offset="100%" stop-color="${accentEnd}" />
-    </linearGradient>`;
-    })
-    .join("");
-  const cards = fallback.map((project, index) => renderCard(project, index)).join("");
+  if (!project) {
+    return `
+<svg width="960" height="460" viewBox="0 0 960 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="460" rx="24" fill="#0B0B0C" />
+  <rect x="24" y="24" width="912" height="412" rx="18" fill="#111214" stroke="#24262B" />
+  <text x="48" y="80" fill="#F3F4F6" font-size="32" font-weight="700" font-family="Avenir Next, Segoe UI, Arial, sans-serif">No projects yet</text>
+</svg>`.trimStart();
+  }
 
   return `
-<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="latestProjectsTitle latestProjectsDesc">
-  <title id="latestProjectsTitle">Latest Projects</title>
-  <desc id="latestProjectsDesc">A summary of four selected portfolio projects.</desc>
-  <defs>${defs}
-  </defs>
-  <rect width="960" height="640" rx="32" fill="#07111f" />
-  <rect x="16" y="16" width="928" height="608" rx="26" fill="rgba(9,21,37,0.9)" stroke="rgba(121,153,191,0.18)" />
-  <circle cx="124" cy="82" r="92" fill="#49a3ff" opacity="0.18" />
-  <circle cx="884" cy="40" r="140" fill="#1f5eb8" opacity="0.12" />
-  <text x="56" y="54" fill="#49a3ff" font-size="14" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2.2">LATEST WORK</text>
-  <text x="56" y="84" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Carolina Santos • Selected Projects</text>
-  <text x="56" y="116" fill="#9bb0ca" font-size="16" font-family="Segoe UI, Arial, sans-serif">Product-oriented apps, academic builds and technical explorations from the portfolio.</text>
-  ${cards}
-</svg>
-`.trimStart();
+<svg width="960" height="460" viewBox="0 0 960 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="latestProjectsTitle latestProjectsDesc">
+  <title id="latestProjectsTitle">Latest Project</title>
+  <desc id="latestProjectsDesc">Current selected project from Carolina Santos portfolio.</desc>
+  <rect width="960" height="460" rx="24" fill="#0B0B0C" />
+  <rect x="24" y="24" width="912" height="412" rx="18" fill="#111214" stroke="#24262B" />
+  <text x="48" y="72" fill="#7CB7FF" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">SELECTED WORK</text>
+  <text x="48" y="104" fill="#F3F4F6" font-size="30" font-weight="700" font-family="Avenir Next, Segoe UI, Arial, sans-serif">Carolina Santos</text>
+  ${renderProjectCard(project)}
+</svg>`.trimStart();
 }
 
 function main() {
   const raw = fs.readFileSync(projectsPath, "utf8");
   const projects = normalizeProjects(JSON.parse(raw));
-  const svg = buildSvg(projects);
-  fs.writeFileSync(outputPath, svg);
+  fs.writeFileSync(outputPath, buildSvg(projects));
   console.log(`Generated ${path.relative(rootDir, outputPath)}`);
 }
 

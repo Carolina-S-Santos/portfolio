@@ -1,40 +1,28 @@
-<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="latestProjectsTitle latestProjectsDesc">
-  <title id="latestProjectsTitle">Latest Projects</title>
-  <desc id="latestProjectsDesc">A summary of four selected portfolio projects.</desc>
-  <defs>
-    <linearGradient id="cardGlow0" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#49a3ff" />
-      <stop offset="100%" stop-color="#1756b7" />
-    </linearGradient>
-  </defs>
-  <rect width="960" height="640" rx="32" fill="#07111f" />
-  <rect x="16" y="16" width="928" height="608" rx="26" fill="rgba(9,21,37,0.9)" stroke="rgba(121,153,191,0.18)" />
-  <circle cx="124" cy="82" r="92" fill="#49a3ff" opacity="0.18" />
-  <circle cx="884" cy="40" r="140" fill="#1f5eb8" opacity="0.12" />
-  <text x="56" y="54" fill="#49a3ff" font-size="14" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2.2">LATEST WORK</text>
-  <text x="56" y="84" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Carolina Santos • Selected Projects</text>
-  <text x="56" y="116" fill="#9bb0ca" font-size="16" font-family="Segoe UI, Arial, sans-serif">Product-oriented apps, academic builds and technical explorations from the portfolio.</text>
+<svg width="960" height="460" viewBox="0 0 960 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="latestProjectsTitle latestProjectsDesc">
+  <title id="latestProjectsTitle">Latest Project</title>
+  <desc id="latestProjectsDesc">Current selected project from Carolina Santos portfolio.</desc>
+  <rect width="960" height="460" rx="24" fill="#0B0B0C" />
+  <rect x="24" y="24" width="912" height="412" rx="18" fill="#111214" stroke="#24262B" />
+  <text x="48" y="72" fill="#7CB7FF" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="3">SELECTED WORK</text>
+  <text x="48" y="104" fill="#F3F4F6" font-size="30" font-weight="700" font-family="Avenir Next, Segoe UI, Arial, sans-serif">Carolina Santos</text>
   
-    <a href="https://carolina-s-santos.github.io/portfolio/project/?slug=live-matter">
-      <g transform="translate(56, 92)">
-        <rect width="396" height="220" rx="24" fill="rgba(16,30,51,0.96)" stroke="rgba(121,153,191,0.24)" />
-        <rect x="0" y="0" width="396" height="220" rx="24" fill="url(#cardGlow0)" opacity="0.16" />
-        <text x="28" y="34" fill="#49a3ff" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.8">INTERACTIVE IOS APP</text>
-        <text x="28" y="72" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">LiveMatter</text>
-        
-          <text x="28" y="106" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">An interactive ecosystem app that</text>
-        
-          <text x="28" y="130" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">turns ecological balance into a</text>
-        
-          <text x="28" y="154" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">playable...</text>
-        
-        
-          <text x="28" y="168" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">SwiftUI • Swift Package Manager •</text>
-        
-          <text x="28" y="188" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">AVFoundation...</text>
-        
-        <text x="28" y="196" fill="#81f0b8" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.5">2026</text>
-      </g>
-    </a>
-  
+  <a href="https://carolina-s-santos.github.io/portfolio/project/?slug=live-matter">
+    <g transform="translate(48, 120)">
+      <rect width="864" height="280" rx="20" fill="#111214" stroke="#24262B" />
+      <text x="32" y="40" fill="#7CB7FF" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">INTERACTIVE IOS APP</text>
+      <text x="32" y="92" fill="#F3F4F6" font-size="38" font-weight="700" font-family="Avenir Next, Segoe UI, Arial, sans-serif">LiveMatter</text>
+      
+      <text x="32" y="136" fill="#A1A1AA" font-size="21" font-family="Segoe UI, Arial, sans-serif">An interactive ecosystem app that turns</text>
+      <text x="32" y="164" fill="#A1A1AA" font-size="21" font-family="Segoe UI, Arial, sans-serif">ecological balance into a playable</text>
+      <text x="32" y="192" fill="#A1A1AA" font-size="21" font-family="Segoe UI, Arial, sans-serif">cause-and-effect...</text>
+      
+      <text x="32" y="220" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">SwiftUI • Swift Package Manager • AVFoundation •</text>
+      <text x="32" y="242" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">CoreText</text>
+      <text x="32" y="248" fill="#F3F4F6" font-size="14" font-family="Segoe UI, Arial, sans-serif">2026</text>
+      <line x1="680" y1="54" x2="816" y2="54" stroke="#24262B" />
+      <line x1="720" y1="92" x2="816" y2="92" stroke="#24262B" />
+      <line x1="756" y1="130" x2="816" y2="130" stroke="#7CB7FF" />
+      <line x1="696" y1="168" x2="816" y2="168" stroke="#24262B" />
+    </g>
+  </a>
 </svg>
