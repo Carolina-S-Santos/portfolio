@@ -1,86 +1,101 @@
 [
   {
-    "name": "Alecrim",
-    "slug": "alecrim",
+    "name": "LiveMatter",
+    "slug": "live-matter",
     "type": "mobile-apps",
-    "categoryLabel": "Mobile App",
+    "categoryLabel": "Interactive iOS App",
     "date": "2026",
     "featured": true,
     "status": "In development",
     "headline": {
-      "en": "Inventory and pricing management for small producers",
-      "pt": "Gestao de estoque e precificacao para pequenos produtores"
+      "en": "An interactive ecosystem app that turns ecological balance into a playable cause-and-effect experience",
+      "pt": "Um app interativo sobre ecossistemas que transforma equilibrio ecologico em uma experiencia jogavel de causa e efeito"
     },
     "cardDescription": {
-      "en": "A SwiftUI app for products, ingredients, stock, pricing and sales in one streamlined workflow.",
-      "pt": "Um app em SwiftUI para produtos, ingredientes, estoque, precificacao e vendas em um fluxo unico."
+      "en": "A SwiftUI experience about food webs, ecological roles and the cascading impact of removing one element from nature.",
+      "pt": "Uma experiencia em SwiftUI sobre cadeias alimentares, papeis ecologicos e o impacto em cascata de remover um elemento da natureza."
     },
     "description": {
       "en": [
-        "Alecrim is a financial and inventory management app designed for small food and craft producers.",
-        "The product combines stock visibility, pricing support and sales tracking in a cleaner mobile experience than ad hoc spreadsheets.",
-        "The design direction prioritizes clarity, confidence and practical decision-making for small businesses."
+        "LiveMatter is an interactive educational iOS app about ecological balance. The experience invites the user to manipulate an ecosystem directly and observe how the environment responds over time.",
+        "Each draggable element represents a real ecological role, such as producers, pollinators, primary consumers, predators and decomposers. Removing one part of the system triggers short-term and long-term consequence waves.",
+        "The project combines product design, illustration, writing, interaction design and SwiftUI implementation to make complex environmental relationships easier to understand through play."
       ],
       "pt": [
-        "Alecrim e um app de gestao financeira e de estoque para pequenos produtores.",
-        "O produto combina visibilidade de estoque, apoio a precificacao e acompanhamento de vendas em uma experiencia mobile mais clara."
+        "LiveMatter e um app educacional interativo sobre equilibrio ecologico. A experiencia convida a pessoa usuaria a manipular um ecossistema e observar como o ambiente responde ao longo do tempo.",
+        "Cada elemento arrastavel representa um papel ecologico real, como produtores, polinizadores, consumidores primarios, predadores e decompositores. Remover uma parte do sistema dispara ondas de consequencias de curto e longo prazo.",
+        "O projeto combina design de produto, ilustracao, escrita, design de interacao e implementacao em SwiftUI para tornar relacoes ambientais complexas mais compreensiveis por meio da interacao."
       ]
     },
     "problem": {
       "en": [
-        "Small producers often manage stock, ingredient costs and sales using scattered notes or spreadsheets with low visibility."
+        "Many ecological relationships are difficult to notice in everyday life, which makes concepts like food webs, ecological pyramids and systemic balance feel abstract or distant."
       ],
       "pt": [
-        "Pequenos produtores muitas vezes gerenciam estoque, custos e vendas com anotacoes dispersas."
+        "Muitas relacoes ecologicas sao dificeis de perceber no cotidiano, o que faz conceitos como cadeias alimentares, piramides ecologicas e equilibrio sistemico parecerem abstratos."
       ]
     },
     "solution": {
       "en": [
-        "The app centralizes product registration, ingredient control, pricing and sales history in one mobile interface with room to scale."
+        "LiveMatter translates ecosystem logic into an interactive scene where users can remove species and immediately understand cascading effects through visual, spatial and textual feedback."
       ],
       "pt": [
-        "O app centraliza cadastro de produtos, controle de ingredientes, precificacao e historico de vendas em uma unica interface mobile."
-      ]
-    },
-    "highlights": {
-      "en": [
-        "SwiftUI interface shaped for accessibility and clarity",
-        "Product, ingredient and category management",
-        "Sales and stock tracking",
-        "Architecture planned for SwiftData and CloudKit sync"
-      ],
-      "pt": [
-        "Interface em SwiftUI com foco em acessibilidade",
-        "Gestao de produtos, ingredientes e categorias"
+        "LiveMatter traduz a logica de um ecossistema em uma cena interativa onde a pessoa usuaria pode remover especies e compreender efeitos em cascata por meio de feedback visual, espacial e textual."
       ]
     },
     "process": {
       "en": [
-        "The current phase focuses on product structure, domain modeling and interface flows that keep operations simple for non-technical users."
+        "The app was structured as a self-contained SwiftUI experience with custom scene composition, onboarding overlays, modals, consequence rules and ambient audio.",
+        "A major part of the work involved designing how each ecological role should behave in the system and how consequence waves should remain understandable without losing educational value."
       ],
       "pt": [
-        "A fase atual foca em estrutura de produto, modelagem e fluxos de interface."
+        "O app foi estruturado como uma experiencia SwiftUI autocontida, com composicao propria de cena, onboarding, modais, regras de consequencia e audio ambiente.",
+        "Uma parte importante do trabalho foi desenhar como cada papel ecologico deveria se comportar no sistema e como as ondas de consequencia permaneceriam compreensiveis sem perder valor educacional."
+      ]
+    },
+    "highlights": {
+      "en": [
+        "Interactive drag-and-remove ecosystem simulation",
+        "Consequence rules for trees, flowers, bees, crickets, frogs, snakes and mushrooms",
+        "SwiftUI app built as a Swift Package iOS application",
+        "Custom audio handling with ambient soundtrack and sound effects",
+        "Original concept, writing, interface design and illustrations by Carolina Santos"
+      ],
+      "pt": [
+        "Simulacao interativa de ecossistema com arrastar e remover",
+        "Regras de consequencia para arvores, flores, abelhas, grilos, sapos, cobras e cogumelos",
+        "App em SwiftUI estruturado como aplicacao iOS com Swift Package",
+        "Audio ambiente e efeitos sonoros personalizados",
+        "Conceito, escrita, interface e ilustracoes originais de Carolina Santos"
+      ]
+    },
+    "challenges": {
+      "en": [
+        "The core challenge was turning ecological complexity into interactions that feel intuitive and playful without making the causal logic misleading or shallow."
+      ],
+      "pt": [
+        "O principal desafio foi transformar complexidade ecologica em interacoes intuitivas e ludicas sem tornar a logica causal superficial ou enganosa."
       ]
     },
     "learned": {
       "en": [
-        "Balancing financial concepts and inventory actions in one app requires strong information hierarchy and careful naming."
+        "This project reinforced how much educational products depend on careful information hierarchy, narrative pacing and feedback design, not just correct domain content."
       ],
       "pt": [
-        "Equilibrar conceitos financeiros e de estoque no mesmo app exige boa hierarquia de informacao."
+        "Este projeto reforcou o quanto produtos educacionais dependem de boa hierarquia de informacao, ritmo narrativo e design de feedback, nao apenas de conteudo correto."
       ]
     },
-    "techStack": ["SwiftUI", "SwiftData", "CloudKit", "Charts", "Figma"],
+    "techStack": ["SwiftUI", "Swift Package Manager", "AVFoundation", "CoreText", "Illustration", "Product Design"],
     "roles": {
-      "en": ["iOS Developer", "Product Designer"],
-      "pt": ["Desenvolvedor iOS", "Product Designer"]
+      "en": ["iOS Developer", "Product Designer", "Illustrator", "Writer"],
+      "pt": ["Desenvolvedora iOS", "Product Designer", "Ilustradora", "Redatora"]
     },
     "team": [
       {
         "name": "Carolina Santos",
         "role": {
-          "en": "iOS Developer",
-          "pt": "Desenvolvedor iOS"
+          "en": "Concept, design and development",
+          "pt": "Conceito, design e desenvolvimento"
         },
         "linkedin": "https://www.linkedin.com/in/carolina-s-dos-santos/"
       }
@@ -89,265 +104,25 @@
       {
         "type": "GitHub",
         "label": "GitHub repository",
-        "url": "https://github.com/Carolina-S-Santos"
-      },
-      {
-        "type": "Figma",
-        "label": "Product exploration",
-        "url": "https://figma.com/"
+        "url": "https://github.com/Carolina-S-Santos/LiveMatter"
       }
     ],
     "assets": {
-      "icon": "",
-      "cover": "",
-      "images": [],
+      "icon": "assets/projects/live-matter/icon.png",
+      "cover": "assets/projects/live-matter/cover.png",
+      "images": [
+        "assets/projects/live-matter/1.png",
+        "assets/projects/live-matter/2.png",
+        "assets/projects/live-matter/3.png",
+        "assets/projects/live-matter/4.png"
+      ],
       "videos": []
     },
     "autoAssets": {
-      "enabled": true,
+      "enabled": false,
       "icon": true,
       "cover": true,
       "screenshotCount": 4,
-      "videoCount": 0
-    }
-  },
-  {
-    "name": "Campus Flow",
-    "slug": "campus-flow",
-    "type": "academic-projects",
-    "categoryLabel": "Academic Project",
-    "date": "2025",
-    "featured": true,
-    "status": "Completed",
-    "headline": {
-      "en": "A student mobility assistant for navigating schedules, routes and campus routines",
-      "pt": "Um assistente de mobilidade estudantil para horarios, rotas e rotina no campus"
-    },
-    "cardDescription": {
-      "en": "A cross-functional academic project connecting UX research, mobile prototyping and data organization.",
-      "pt": "Um projeto academico conectando pesquisa, prototipagem mobile e organizacao de dados."
-    },
-    "description": {
-      "en": [
-        "Campus Flow was created to reduce friction in the daily routines of university students moving across classes and activities.",
-        "The concept explored route guidance, schedule awareness and contextual information inside a single mobile experience."
-      ],
-      "pt": [
-        "Campus Flow foi criado para reduzir friccao na rotina de estudantes entre aulas e atividades."
-      ]
-    },
-    "problem": {
-      "en": [
-        "Students frequently juggle building locations, schedule changes and transit gaps without a single source of context."
-      ],
-      "pt": [
-        "Estudantes lidam com locais, mudancas de horario e deslocamento sem uma fonte unica de contexto."
-      ]
-    },
-    "solution": {
-      "en": [
-        "The product concept unified schedule references, route awareness and contextual reminders into a compact app flow."
-      ],
-      "pt": [
-        "O conceito unificou referencias de horario, rotas e lembretes contextuais em um fluxo compacto."
-      ]
-    },
-    "highlights": {
-      "en": [
-        "User research synthesis",
-        "Interface flows in Figma",
-        "Information architecture for academic routines"
-      ],
-      "pt": [
-        "Sintese de pesquisa com usuarios",
-        "Fluxos de interface no Figma"
-      ]
-    },
-    "challenges": {
-      "en": [
-        "The biggest challenge was defining which information mattered at each moment without overwhelming the student."
-      ],
-      "pt": [
-        "O principal desafio foi definir qual informacao importar em cada momento sem sobrecarregar o estudante."
-      ]
-    },
-    "techStack": ["Figma", "SwiftUI", "Research", "Prototyping"],
-    "roles": {
-      "en": ["Product Designer", "Researcher"],
-      "pt": ["Product Designer", "Pesquisador"]
-    },
-    "team": [
-      {
-        "name": "Carolina Santos",
-        "role": {
-          "en": "Product Designer",
-          "pt": "Product Designer"
-        },
-        "linkedin": "https://www.linkedin.com/in/carolina-s-dos-santos/"
-      }
-    ],
-    "links": [
-      {
-        "type": "Case Study",
-        "label": "Case study",
-        "url": "https://github.com/Carolina-S-Santos"
-      }
-    ],
-    "assets": {
-      "icon": "",
-      "cover": "",
-      "images": [],
-      "videos": []
-    },
-    "autoAssets": {
-      "enabled": true,
-      "icon": true,
-      "cover": true,
-      "screenshotCount": 3,
-      "videoCount": 0
-    }
-  },
-  {
-    "name": "Pulseboard",
-    "slug": "pulseboard",
-    "type": "other",
-    "categoryLabel": "Web Tool",
-    "date": "2025",
-    "featured": true,
-    "status": "Prototype",
-    "headline": {
-      "en": "A compact dashboard for tracking experiments, tasks and product signals",
-      "pt": "Um dashboard compacto para acompanhar experimentos, tarefas e sinais de produto"
-    },
-    "cardDescription": {
-      "en": "A lightweight interface experiment for blending metrics, workflow and decision visibility.",
-      "pt": "Um experimento de interface para combinar metricas, fluxo de trabalho e visibilidade."
-    },
-    "description": {
-      "en": [
-        "Pulseboard is a lightweight dashboard concept for keeping product work visible without turning the interface into a cluttered analytics wall.",
-        "It explores concise modules, visual rhythm and a sharper balance between metrics and action."
-      ],
-      "pt": [
-        "Pulseboard e um conceito de dashboard leve para manter o trabalho de produto visivel sem poluicao."
-      ]
-    },
-    "highlights": {
-      "en": [
-        "Dashboard information hierarchy",
-        "Design system exploration",
-        "Fast iteration in HTML, CSS and JavaScript"
-      ],
-      "pt": [
-        "Hierarquia de informacao para dashboard",
-        "Iteracao rapida em HTML, CSS e JavaScript"
-      ]
-    },
-    "techStack": ["HTML", "CSS", "JavaScript", "Figma"],
-    "roles": {
-      "en": ["Frontend Developer", "Product Designer"],
-      "pt": ["Desenvolvedor Frontend", "Product Designer"]
-    },
-    "team": [
-      {
-        "name": "Carolina Santos",
-        "role": {
-          "en": "Frontend Developer",
-          "pt": "Desenvolvedor Frontend"
-        },
-        "linkedin": "https://www.linkedin.com/in/carolina-s-dos-santos/"
-      }
-    ],
-    "links": [
-      {
-        "type": "Demo",
-        "label": "Demo",
-        "url": "https://github.com/Carolina-S-Santos"
-      }
-    ],
-    "assets": {
-      "icon": "",
-      "cover": "",
-      "images": [],
-      "videos": []
-    },
-    "autoAssets": {
-      "enabled": true,
-      "icon": true,
-      "cover": true,
-      "screenshotCount": 2,
-      "videoCount": 0
-    }
-  },
-  {
-    "name": "Vision Notes",
-    "slug": "vision-notes",
-    "type": "academic-projects",
-    "categoryLabel": "ML Experiment",
-    "date": "2024",
-    "featured": false,
-    "status": "Exploration",
-    "headline": {
-      "en": "An academic experiment around lightweight note classification and content tagging",
-      "pt": "Um experimento academico sobre classificacao leve de notas e rotulagem"
-    },
-    "cardDescription": {
-      "en": "A technical study mixing Python, data pipelines and ML prototyping for academic investigation.",
-      "pt": "Um estudo tecnico com Python, pipelines de dados e prototipagem de ML."
-    },
-    "description": {
-      "en": [
-        "Vision Notes explores simple classification workflows for organizing textual notes and study material.",
-        "The project was useful for understanding dataset preparation, annotation tradeoffs and evaluation basics."
-      ],
-      "pt": [
-        "Vision Notes explora fluxos simples de classificacao para organizar anotacoes e material de estudo."
-      ]
-    },
-    "highlights": {
-      "en": [
-        "Python-based experimentation",
-        "Dataset structuring and cleaning",
-        "Evaluation of simple classification approaches"
-      ],
-      "pt": [
-        "Experimentacao com Python",
-        "Estruturacao e limpeza de datasets"
-      ]
-    },
-    "techStack": ["Python", "Pandas", "Scikit-learn", "Jupyter"],
-    "roles": {
-      "en": ["Researcher", "Developer"],
-      "pt": ["Pesquisador", "Desenvolvedor"]
-    },
-    "team": [
-      {
-        "name": "Carolina Santos",
-        "role": {
-          "en": "Researcher",
-          "pt": "Pesquisador"
-        },
-        "linkedin": "https://www.linkedin.com/in/carolina-s-dos-santos/"
-      }
-    ],
-    "links": [
-      {
-        "type": "GitHub",
-        "label": "Repository",
-        "url": "https://github.com/Carolina-S-Santos"
-      }
-    ],
-    "assets": {
-      "icon": "",
-      "cover": "",
-      "images": [],
-      "videos": []
-    },
-    "autoAssets": {
-      "enabled": true,
-      "icon": true,
-      "cover": true,
-      "screenshotCount": 2,
       "videoCount": 0
     }
   }

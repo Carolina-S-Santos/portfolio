@@ -6,14 +6,6 @@
       <stop offset="0%" stop-color="#49a3ff" />
       <stop offset="100%" stop-color="#1756b7" />
     </linearGradient>
-    <linearGradient id="cardGlow1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7de2d1" />
-      <stop offset="100%" stop-color="#1c7f8b" />
-    </linearGradient>
-    <linearGradient id="cardGlow2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#86a8ff" />
-      <stop offset="100%" stop-color="#354fb7" />
-    </linearGradient>
   </defs>
   <rect width="960" height="640" rx="32" fill="#07111f" />
   <rect x="16" y="16" width="928" height="608" rx="26" fill="rgba(9,21,37,0.9)" stroke="rgba(121,153,191,0.18)" />
@@ -23,65 +15,25 @@
   <text x="56" y="84" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Carolina Santos • Selected Projects</text>
   <text x="56" y="116" fill="#9bb0ca" font-size="16" font-family="Segoe UI, Arial, sans-serif">Product-oriented apps, academic builds and technical explorations from the portfolio.</text>
   
-    <a href="https://carolina-s-santos.github.io/portfolio/project/?slug=alecrim">
+    <a href="https://carolina-s-santos.github.io/portfolio/project/?slug=live-matter">
       <g transform="translate(56, 92)">
         <rect width="396" height="220" rx="24" fill="rgba(16,30,51,0.96)" stroke="rgba(121,153,191,0.24)" />
         <rect x="0" y="0" width="396" height="220" rx="24" fill="url(#cardGlow0)" opacity="0.16" />
-        <text x="28" y="34" fill="#49a3ff" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.8">MOBILE APP</text>
-        <text x="28" y="72" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Alecrim</text>
+        <text x="28" y="34" fill="#49a3ff" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.8">INTERACTIVE IOS APP</text>
+        <text x="28" y="72" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">LiveMatter</text>
         
-          <text x="28" y="106" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">Inventory and pricing management</text>
+          <text x="28" y="106" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">An interactive ecosystem app that</text>
         
-          <text x="28" y="130" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">for small producers</text>
+          <text x="28" y="130" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">turns ecological balance into a</text>
+        
+          <text x="28" y="154" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">playable...</text>
         
         
-          <text x="28" y="168" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">SwiftUI • SwiftData • CloudKit •</text>
+          <text x="28" y="168" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">SwiftUI • Swift Package Manager •</text>
         
-          <text x="28" y="188" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">Charts</text>
+          <text x="28" y="188" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">AVFoundation...</text>
         
         <text x="28" y="196" fill="#81f0b8" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.5">2026</text>
-      </g>
-    </a>
-  
-    <a href="https://carolina-s-santos.github.io/portfolio/project/?slug=campus-flow">
-      <g transform="translate(508, 92)">
-        <rect width="396" height="220" rx="24" fill="rgba(16,30,51,0.96)" stroke="rgba(121,153,191,0.24)" />
-        <rect x="0" y="0" width="396" height="220" rx="24" fill="url(#cardGlow1)" opacity="0.16" />
-        <text x="28" y="34" fill="#7de2d1" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.8">ACADEMIC PROJECT</text>
-        <text x="28" y="72" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Campus Flow</text>
-        
-          <text x="28" y="106" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">A student mobility assistant for</text>
-        
-          <text x="28" y="130" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">navigating schedules, routes and</text>
-        
-          <text x="28" y="154" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">campus...</text>
-        
-        
-          <text x="28" y="168" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">Figma • SwiftUI • Research •</text>
-        
-          <text x="28" y="188" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">Prototyping</text>
-        
-        <text x="28" y="196" fill="#81f0b8" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.5">2025</text>
-      </g>
-    </a>
-  
-    <a href="https://carolina-s-santos.github.io/portfolio/project/?slug=pulseboard">
-      <g transform="translate(56, 356)">
-        <rect width="396" height="220" rx="24" fill="rgba(16,30,51,0.96)" stroke="rgba(121,153,191,0.24)" />
-        <rect x="0" y="0" width="396" height="220" rx="24" fill="url(#cardGlow2)" opacity="0.16" />
-        <text x="28" y="34" fill="#86a8ff" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.8">WEB TOOL</text>
-        <text x="28" y="72" fill="#ecf3ff" font-size="28" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Pulseboard</text>
-        
-          <text x="28" y="106" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">A compact dashboard for tracking</text>
-        
-          <text x="28" y="130" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">experiments, tasks and product</text>
-        
-          <text x="28" y="154" fill="#9bb0ca" font-size="18" font-family="Segoe UI, Arial, sans-serif">signals</text>
-        
-        
-          <text x="28" y="168" fill="#7386a1" font-size="14" font-family="Segoe UI, Arial, sans-serif">HTML • CSS • JavaScript • Figma</text>
-        
-        <text x="28" y="196" fill="#81f0b8" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1.5">2025</text>
       </g>
     </a>
   
