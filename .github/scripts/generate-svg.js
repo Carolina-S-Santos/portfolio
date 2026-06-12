@@ -66,6 +66,12 @@ function renderProjectCard(project) {
   const headlineLines = wrapText(project.headline, 48, 3);
   const techLines = wrapText(project.techStack.slice(0, 4).join(" • "), 54, 2);
   const url = escapeXml(`https://carolina-s-santos.github.io/portfolio/project/?slug=${project.slug}`);
+  const headlineStartY = 136;
+  const headlineStep = 28;
+  const headlineEndY = headlineStartY + Math.max(0, headlineLines.length - 1) * headlineStep;
+  const techStartY = headlineEndY + 42;
+  const techStep = 22;
+  const dateY = 248;
 
   return `
   <a href="${url}">
@@ -74,10 +80,10 @@ function renderProjectCard(project) {
       <text x="32" y="40" fill="#7CB7FF" font-size="12" font-family="Segoe UI, Arial, sans-serif" letter-spacing="2">${category}</text>
       <text x="32" y="92" fill="#F3F4F6" font-size="38" font-weight="700" font-family="Avenir Next, Segoe UI, Arial, sans-serif">${title}</text>
       ${headlineLines.map((line, index) => `
-      <text x="32" y="${136 + index * 28}" fill="#A1A1AA" font-size="21" font-family="Segoe UI, Arial, sans-serif">${escapeXml(line)}</text>`).join("")}
+      <text x="32" y="${headlineStartY + index * headlineStep}" fill="#A1A1AA" font-size="21" font-family="Segoe UI, Arial, sans-serif">${escapeXml(line)}</text>`).join("")}
       ${techLines.map((line, index) => `
-      <text x="32" y="${220 + index * 22}" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">${escapeXml(line)}</text>`).join("")}
-      <text x="32" y="248" fill="#F3F4F6" font-size="14" font-family="Segoe UI, Arial, sans-serif">${escapeXml(project.date)}</text>
+      <text x="32" y="${techStartY + index * techStep}" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">${escapeXml(line)}</text>`).join("")}
+      <text x="816" y="${dateY}" text-anchor="end" fill="#F3F4F6" font-size="14" font-family="Segoe UI, Arial, sans-serif">${escapeXml(project.date)}</text>
       <line x1="680" y1="54" x2="816" y2="54" stroke="#24262B" />
       <line x1="720" y1="92" x2="816" y2="92" stroke="#24262B" />
       <line x1="756" y1="130" x2="816" y2="130" stroke="#7CB7FF" />

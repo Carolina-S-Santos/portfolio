@@ -16,9 +16,9 @@
       <text x="32" y="164" fill="#A1A1AA" font-size="21" font-family="Segoe UI, Arial, sans-serif">ecological balance into a playable</text>
       <text x="32" y="192" fill="#A1A1AA" font-size="21" font-family="Segoe UI, Arial, sans-serif">cause-and-effect...</text>
       
-      <text x="32" y="220" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">SwiftUI • Swift Package Manager • AVFoundation •</text>
-      <text x="32" y="242" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">CoreText</text>
-      <text x="32" y="248" fill="#F3F4F6" font-size="14" font-family="Segoe UI, Arial, sans-serif">2026</text>
+      <text x="32" y="234" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">SwiftUI • Swift Package Manager • AVFoundation •</text>
+      <text x="32" y="256" fill="#71717A" font-size="15" font-family="Segoe UI, Arial, sans-serif">CoreText</text>
+      <text x="816" y="248" text-anchor="end" fill="#F3F4F6" font-size="14" font-family="Segoe UI, Arial, sans-serif">2026</text>
       <line x1="680" y1="54" x2="816" y2="54" stroke="#24262B" />
       <line x1="720" y1="92" x2="816" y2="92" stroke="#24262B" />
       <line x1="756" y1="130" x2="816" y2="130" stroke="#7CB7FF" />
