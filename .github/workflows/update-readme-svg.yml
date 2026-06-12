@@ -1,0 +1,36 @@
+name: Generate Latest Projects SVG
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'projects.json'
+      - '.github/scripts/generate-svg.js'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate SVG
+        run: node .github/scripts/generate-svg.js
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add latest-projects.svg
+          git commit -m "Auto-generate latest projects SVG" || echo "No changes to commit"
+          git push

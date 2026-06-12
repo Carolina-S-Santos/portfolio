@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "kicker": "CS student @ UNISINOS • Apple Developer Academy Fellow",
+    "title": "Building digital products that connect code, design and real-world use.",
+    "subtitle": "I work across iOS development, product design and technical experimentation, with an interest in practical apps, thoughtful interfaces and projects that solve real problems.",
+    "focus": [
+      "SwiftUI-driven mobile products with product-level attention to detail",
+      "Academic and technical projects that turn learning into tangible builds",
+      "Design decisions shaped by usability, structure and implementation realism"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Carolina-S-Santos"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/carolina-s-dos-santos/"
+      }
+    ]
+  },
+  "about": [
+    "I am a Computer Science student at UNISINOS and an Apple Developer Academy Fellow focused on building polished, useful digital products.",
+    "My main interests are iOS development with SwiftUI, product thinking, interface design and academic or technical projects that create real learning value.",
+    "I care about product clarity, good interaction decisions and implementation quality, whether the work is a mobile app, a system concept or a technical experiment."
+  ],
+  "skills": [
+    "SwiftUI",
+    "SwiftData",
+    "CloudKit",
+    "UIKit",
+    "Git",
+    "GitHub",
+    "Figma",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Python",
+    "Machine Learning"
+  ],
+  "contact": [
+    {
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/carolina-s-dos-santos",
+      "description": "Professional profile, background and network.",
+      "url": "https://www.linkedin.com/in/carolina-s-dos-santos/"
+    },
+    {
+      "label": "GitHub",
+      "value": "github.com/Carolina-S-Santos",
+      "description": "Code, experiments and public project repositories.",
+      "url": "https://github.com/Carolina-S-Santos"
+    }
+  ]
+}

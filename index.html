@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carolina Santos | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Carolina Santos, a Computer Science student and Apple Developer Academy Fellow focused on iOS, product design and technology."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="nav">
+          <a class="brand" href="./">Carolina Santos</a>
+          <div class="nav-links">
+            <a href="#work">work</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <div class="hero-copy">
+            <p class="eyebrow" id="hero-kicker">iOS developer • product-focused builder</p>
+            <h1 id="hero-title">Building digital products with code, clarity and product thinking.</h1>
+            <p class="hero-subtitle" id="hero-subtitle">
+              Computer Science student at UNISINOS and Apple Developer Academy Fellow creating practical apps, academic technology projects and polished digital experiences.
+            </p>
+            <div class="hero-links" id="hero-links"></div>
+          </div>
+          <aside class="hero-panel">
+            <p class="hero-panel-label">Current focus</p>
+            <ul class="hero-focus-list" id="hero-focus-list"></ul>
+          </aside>
+        </section>
+
+        <section class="section" id="work">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">selected work</p>
+              <h2>Projects shaped by product, engineering and experimentation.</h2>
+            </div>
+            <p class="section-description">
+              A curated set of mobile apps, academic builds and technical explorations. Featured projects are shown first by default.
+            </p>
+          </div>
+
+          <div class="filters" id="project-filters" aria-label="Project filters">
+            <button class="filter-chip is-active" data-filter="featured" type="button">featured</button>
+            <button class="filter-chip" data-filter="mobile-apps" type="button">mobile apps</button>
+            <button class="filter-chip" data-filter="academic-projects" type="button">academic projects</button>
+            <button class="filter-chip" data-filter="other" type="button">other</button>
+            <button class="filter-chip" data-filter="all" type="button">all</button>
+          </div>
+
+          <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="section two-column-section" id="about">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">about</p>
+              <h2>Technical depth with a product mindset.</h2>
+            </div>
+          </div>
+          <div class="content-card prose" id="about-content"></div>
+        </section>
+
+        <section class="section" id="skills">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">toolbox</p>
+              <h2>Tools I use to design, ship and iterate.</h2>
+            </div>
+          </div>
+          <div class="tag-grid" id="skills-grid"></div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">contact</p>
+              <h2>Open to conversations about apps, product and technology.</h2>
+            </div>
+          </div>
+          <div class="contact-grid" id="contact-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./projectData.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carolina-s-santos.github.io/portfolio/sitemap.xml
